@@ -34,9 +34,11 @@ console.log(c)
 
 window.onload = function() {
 query = "location.href='codes.html?search="+ c + "';"
+query2 = "location.href='codes2.html?search="+ c + "';"
 
 
 document.getElementById("page3").setAttribute("onclick", query);
+document.getElementById("page4").setAttribute("onclick", query2);
 
   document.getElementById("output1").innerHTML = c;
   document.getElementById("output2").innerHTML = c;
@@ -67,22 +69,22 @@ document.getElementById("page3").setAttribute("onclick", query);
   </div>
 </form>
 
-  <div style="cursor:pointer" id="page3" class="container clearfix">
-  <div class="text text-2">
+  <div class="container clearfix">
+  <div style="cursor:pointer" class="text text-2"  id="page3">
   <h5 id="output1"></h5>
   Faria Lima &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
   </div>
 
 
-    <div class="element element-2"></div>
+    <div   class="element element-2"></div>
     <p class="text text-3">&nbsp; &nbsp;Distância: 2 km</p>
-    <div class="text text-4">
+    <div style="cursor:pointer" class="text text-4" id="page4">
     <h5 id="output2"></h5>
     Paulista &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
     </div>
 
 
-    <div class="element element-3"></div>
+    <div   class="element element-3"></div>
     <p class="text text-5">&nbsp; &nbsp;Distância: 4&nbsp;km</p>
   </div>
   <div class="fixed-top">
