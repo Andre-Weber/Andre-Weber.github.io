@@ -297,6 +297,7 @@ body {
   .element-1 {
     top: 0;
     left: -10%;
+    background-color: #ff0000
   }
 
   .text-1 {
