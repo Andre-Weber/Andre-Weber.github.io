@@ -31,6 +31,11 @@ const myParam = urlParams.get('search');
 console.log(myParam)
 
 window.onload = function() {
+query = "location.href='codes_carro.html?search="+ myParam + "';"
+
+
+document.getElementById("img1").setAttribute("onclick", query);
+
 
 
   document.getElementById("output1").innerHTML = myParam;
@@ -45,7 +50,7 @@ window.onload = function() {
   <div class="element element-1"></div>
   <img class="image image-1" src="images/trem.png">
   <div class="element element-2"></div>
-  <img class="image image-2" src="images/carro.png">
+  <img id="img1" class="image image-2" src="images/carro.png">
   <div class="element element-3"></div>
   <img class="image image-3" src="images/walk_539933.png">
   <img class="image image-4" src="images/Mapa.PNG">

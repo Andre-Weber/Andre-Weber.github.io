@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1.0">
-  <title>codes2</title>
+  <title>codes</title>
   <link rel="stylesheet" href="css/standardize.css">
   <link rel="stylesheet" href="css/codes-grid.css">
-  <link rel="stylesheet" href="css/codes.css">
+  <link rel="stylesheet" href="css/codes_carro.css">
 
   <style type="text/css">
   .fixed-top {
@@ -16,7 +16,6 @@
   left: 0;
   z-index: 1030;
 }
-
 
   </style>
 
@@ -32,11 +31,15 @@ const myParam = urlParams.get('search');
 console.log(myParam)
 
 window.onload = function() {
+query = "location.href='codes.html?search="+ myParam + "';"
 
-query = "location.href='codes_carro2.html?search="+ myParam + "';"
+
+document.getElementById("img2").setAttribute("onclick", query);
 
 
-document.getElementById("img1").setAttribute("onclick", query);
+
+  document.getElementById("output1").innerHTML = myParam;
+
 
 
   document.getElementById("output1").innerHTML = myParam;
@@ -53,21 +56,21 @@ document.getElementById("img1").setAttribute("onclick", query);
   <div class="element element-2"></div>
   <img id="img1" class="image image-2" src="images/carro.png">
   <div class="element element-3"></div>
-  <img class="image image-3" src="images/walk_539933.png">
+  <img id="img2" class="image image-3" src="images/walk_539933.png">
   <img class="image image-4" src="images/Mapa.PNG">
-  <p class="text text-2"><span>Distância: </span>3,8km</p>
-  <p class="text text-3"><span>Ida</span><span>&nbsp;15 minutos</span></p>
-  <p class="text text-4"><span>&nbsp;Volta</span><span>&nbsp;13 minutos</span></p>
+  <p class="text text-2"><span>Distância</span>1,8km</p>
+  <p class="text text-3"><span>Ida</span><span>&nbsp;12 minutos</span></p>
+  <p class="text text-4"><span>&nbsp;Volta</span><span>&nbsp;10 minutos</span></p>
   <div class="element element-4"></div>
-  <p class="text text-5">Permanência: 1hr e 18min</p>
+  <p class="text text-5">Permanência: 49 min</p>
   <div class="element element-5"></div>
   <div class="element element-6"></div>
   <div class="element element-7"></div>
-  <p class="text text-6"><a>Av. Paulista, 1439, Bela Vista</a></p>
+  <p class="text text-6"><a>Alameda dos Jurupis, 1335, Indianópolis</a></p>
   <div class="element element-8"></div>
   <p class="text text-7" id="output1"></p>
   <div class="element element-9"></div>
-  <p class="text text-8"><a>Tempo total&nbsp;</a><a>1 hora e 46 min</a></p>
+  <p class="text text-8"><a>Tempo total&nbsp;</a><a>1hr 9min</a></p>
   <div class="element element-10"></div>
   <div class="fixed-top">
 <img style="cursor:pointer" src="../img/back.png" onclick="window.history.go(-1)" alt="back page" height="50" weight="50">

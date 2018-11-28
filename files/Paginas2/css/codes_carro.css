@@ -423,7 +423,7 @@ body {
     left: 42.4%;
     width: 15%;
     height: 56px;
-    background-color: rgb(255, 255, 255);
+    background-color: #1a8cff
   }
 
   .element-4 {
@@ -452,7 +452,8 @@ body {
     left: 16.8%;
     width: 15%;
     height: 56px;
-    background-color: #1a8cff
+    background-color: rgba(0, 0, 0, 0);
+  
   }
 
   .element-8 {
